@@ -1,0 +1,19 @@
+{
+  "name": "mgnify-web-cli-example",
+  "version": "0.0.1",
+  "description": "Magnify web cli example",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "backbone": "^1.4.0",
+    "handlebars": "^4.1.1",
+    "jquery": "^3.3.1",
+    "mgnify": "^1.1.2",
+    "requirejs": "^2.3.6",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}

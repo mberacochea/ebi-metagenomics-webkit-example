@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">        
+        <script id="go-slim-item-tpl" type="text/x-handlebars-template">
+            <td>{{ attributes.accession }}</td>
+            <td>{{ attributes.description }}</td>
+        </script>
+    </head>
+    <body>
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        MGnify API -- web client usage example --
+                    </h1>
+                    <h2 class="subtitle">
+                        Get the GO Slims for an accession.
+                    </h2>
+                    <h3>
+                        Try with "MGYA00151461" on get data
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div id="search-view">
+                <div class='message'></div>
+                <form>
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input type="text" class="search input" placeholder="MGYA00151461" />
+                        </div>
+                        <div class="control">
+                            <input type="submit" value="Get data" class="button is-primary"/>
+                        </div>
+                    </div>                         
+                </form>
+            </div>
+            <div id="go-slim-view">
+                <form>
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input type="text" class="filter input" />
+                        </div>
+                        <div class="control">
+                            <input type="submit" value="Filter table" class="button is-info"/>
+                        </div>
+                    </div>                    
+                </form>            
+                <table id="go-slim-list" class="table is-striped is-fullwidth">
+                </table>
+            </div>            
+        </div>
+        <script src="dist/app.js"></script>
+    </body>
+</html>
